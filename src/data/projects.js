@@ -111,7 +111,10 @@ export const projects = [
                 '\n - Duration: 1 week.',
         },
 
-        demoVideo: 'videos/Video_Demo_3C/WishBond_Lvl1.mp4',
+        demoVideo: {
+            type: 'youtube',
+            url: 'https://www.youtube.com/watch?v=jncprZIenkM&list=PL5xyhUz1OMlvid6Enq-WXIfOIJ6pZbY3O&index=5',
+        },
 
         postMortem: {
             fr:

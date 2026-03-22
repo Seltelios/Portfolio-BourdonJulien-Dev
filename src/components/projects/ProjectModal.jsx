@@ -13,7 +13,7 @@ function ProjectModal({ project, onClose }) {
     const hasSkills = project.skills && project.skills.length > 0;
     const hasConstraints = Boolean(constraints && constraints.trim().length > 0);
     const hasDescription = Boolean(description && description.trim().length > 0);
-    const hasDemoVideo = Boolean(project.demoVideo);
+    const hasDemoVideo = Boolean(project.demoVideo?.url);
     const hasPostMortem = Boolean(postMortem && postMortem.trim().length > 0);
 
     const { github, itch, youtube } = project.links || {};
@@ -35,15 +35,31 @@ function ProjectModal({ project, onClose }) {
         close: language === 'fr' ? 'Fermer' : 'Close',
     };
 
+    function GetYoutubeEmbedUrl(vUrl) {
+        if (!vUrl) {
+            return '';
+        }
+
+        if (vUrl.includes('youtube.com/watch?v=')) {
+            const videoId = vUrl.split('v=')[1]?.split('&')[0];
+            return videoId ? `https://www.youtube.com/embed/${videoId}` : '';
+        }
+
+        if (vUrl.includes('youtu.be/')) {
+            const videoId = vUrl.split('youtu.be/')[1]?.split('?')[0];
+            return videoId ? `https://www.youtube.com/embed/${videoId}` : '';
+        }
+
+        return '';
+    }
+
     return (
         <div
             className="fixed inset-0 z-40 bg-black/60 flex items-center justify-center"
             aria-modal="true"
             role="dialog"
         >
-            {/* Boîte principale : elle-même scrollable */}
             <div className="relative max-w-4xl w-full max-h-[90vh] bg-slate-900 border border-slate-600 rounded-lg shadow-2xl overflow-y-auto">
-                {/* Bouton fermer */}
                 <button
                     type="button"
                     onClick={onClose}
@@ -54,16 +70,13 @@ function ProjectModal({ project, onClose }) {
                     ✕
                 </button>
 
-                {/* Titre */}
                 <div className="px-5 py-4 border-b border-slate-700">
                     <h2 className="text-xl font-semibold text-center">
                         {title}
                     </h2>
                 </div>
 
-                {/* Corps : tout le contenu, y compris la vidéo, défile ici */}
                 <div className="px-5 py-4 space-y-6">
-                    {/* Image */}
                     {project.thumbnail && (
                         <div className="w-full">
                             <img
@@ -74,7 +87,6 @@ function ProjectModal({ project, onClose }) {
                         </div>
                     )}
 
-                    {/* Skills */}
                     {hasSkills && (
                         <section>
                             <h3 className="text-sm font-semibold mb-2">
@@ -93,7 +105,6 @@ function ProjectModal({ project, onClose }) {
                         </section>
                     )}
 
-                    {/* Cahier des charges (repliable) */}
                     {hasConstraints && (
                         <section>
                             <details className="border border-slate-700 rounded-md bg-slate-900">
@@ -107,7 +118,6 @@ function ProjectModal({ project, onClose }) {
                         </section>
                     )}
 
-                    {/* Description */}
                     {hasDescription && (
                         <section>
                             <h3 className="text-sm font-semibold mb-2">
@@ -119,25 +129,27 @@ function ProjectModal({ project, onClose }) {
                         </section>
                     )}
 
-                    {/* Vidéo démo */}
                     {hasDemoVideo && (
                         <section>
                             <h3 className="text-sm font-semibold mb-2">
                                 {labels.demo}
                             </h3>
-                            <video
-                                className="w-full rounded-md border border-slate-700"
-                                controls
-                                src={project.demoVideo}
-                            >
-                                {language === 'fr'
-                                    ? 'Votre navigateur ne supporte pas la lecture vidéo HTML5.'
-                                    : 'Your browser does not support HTML5 video.'}
-                            </video>
+
+                            {project.demoVideo.type === 'youtube' && (
+                                <div className="w-full aspect-video rounded-md overflow-hidden border border-slate-700">
+                                    <iframe
+                                        className="w-full h-full"
+                                        src={GetYoutubeEmbedUrl(project.demoVideo.url)}
+                                        title={title}
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    />
+                                </div>
+                            )}
                         </section>
                     )}
 
-                    {/* Post-mortem */}
                     {hasPostMortem && (
                         <section>
                             <h3 className="text-sm font-semibold mb-2">
@@ -149,7 +161,6 @@ function ProjectModal({ project, onClose }) {
                         </section>
                     )}
 
-                    {/* Liens */}
                     {hasLinks && (
                         <section>
                             <h3 className="text-sm font-semibold mb-2">
