@@ -12,12 +12,6 @@ export const contacts = [
         type: 'link',
     },
     {
-        id: 'cv',
-        label: { fr: 'CV', en: 'Resume' },
-        url: '/docs/cv.pdf', // par exemple : public/docs/cv.pdf
-        type: 'file',
-    },
-    {
         id: 'discord',
         label: { fr: 'Discord', en: 'Discord' },
         url: 'https://discord.com/',

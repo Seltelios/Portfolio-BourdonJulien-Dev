@@ -10,8 +10,8 @@ function HomePage() {
                 {pageTitles.home[language]}
             </h1>
 
-            <div className="flex-1 bg-slate-800/60 border border-slate-700 rounded-md flex items-center justify-center">
-                <p className="text-sm text-slate-300">
+            <div className="home-intro-container">
+                <p className="home-intro-text">
                     {uiTexts.homeIntro[language]}
                 </p>
             </div>

@@ -22,10 +22,17 @@ export const sections = {
     },
 };
 
-// Petits textes généraux (placeholder pour l'instant)
+// Petits textes généraux
 export const uiTexts = {
     homeIntro: {
-        fr: 'Ici, il y aura plus tard une illustration ou une présentation générale.',
-        en: 'Here, there will later be an illustration or a general presentation.',
+        fr:
+            `Bienvenue sur mon portfolio.
+
+Ce site regroupe mes projets de programmation et de développement de jeux vidéo, réalisés au travers de travaux scolaires, de projets personnels et d’expérimentations techniques sous Unity, Unreal Engine et en programmation console.`,
+
+        en:
+            `Welcome to my portfolio.
+
+This website showcases my programming and video game development projects, created through academic work, personal projects, and technical experiments using Unity, Unreal Engine, and console programming.`,
     },
 };

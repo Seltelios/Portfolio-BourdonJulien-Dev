@@ -179,8 +179,8 @@ export const projects = [
         category: 'school',
 
         title: {
-            fr: 'Projet 3C - WishBond',
-            en: '3C Project - WishBond',
+            fr: 'Projet Unity - 3C - WishBond',
+            en: 'Unity Project - 3C - WishBond',
         },
 
         shortDescription: {
