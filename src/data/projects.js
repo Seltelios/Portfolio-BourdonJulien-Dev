@@ -343,45 +343,45 @@ export const projects = [
     //----------------------------------------------------------------------------------------------------
     //----------------------------------------------------------------------------------------------------
 
-    {
-        id: 'unity-multiplayer',
-        category: 'personal',
-
-        title: {
-            fr: 'Jeu multijoueur Unity',
-            en: 'Unity multiplayer game',
-        },
-
-        shortDescription: {
-            fr: 'Prototype de jeu multijoueur au tour par tour avec Mirror.',
-            en: 'Turn-based multiplayer prototype with Mirror.',
-        },
-
-        thumbnail: null,
-
-        skills: ['Unity', 'C#', 'Mirror'],
-
-        constraints: {
-            fr: 'Prototype personnel, sans cahier des charges strict.',
-            en: 'Personal prototype, without a strict requirements document.',
-        },
-
-        description: {
-            fr: 'Description détaillée du prototype multijoueur : objectifs, systèmes de jeu, problèmes réseau rencontrés...',
-            en: 'Detailed description of the multiplayer prototype: goals, gameplay systems, network issues...',
-        },
-
-        demoVideo: null, // pas encore de vidéo
-
-        postMortem: {
-            fr: 'Ce projet m’a aidé à mieux comprendre le réseau et les contraintes du multijoueur.',
-            en: 'This project helped me better understand networking and multiplayer constraints.',
-        },
-
-        links: {
-            github: '',
-            itch: 'https://itch.io/', // à remplacer par ta page
-            youtube: '',
-        },
-    },
+//    {
+//        id: 'unity-multiplayer',
+//        category: 'personal',
+//
+//        title: {
+//            fr: 'Jeu multijoueur Unity',
+//            en: 'Unity multiplayer game',
+//        },
+//
+//        shortDescription: {
+//            fr: 'Prototype de jeu multijoueur au tour par tour avec Mirror.',
+//            en: 'Turn-based multiplayer prototype with Mirror.',
+//        },
+//
+//        thumbnail: null,
+//
+//        skills: ['Unity', 'C#', 'Mirror'],
+//
+//        constraints: {
+//            fr: 'Prototype personnel, sans cahier des charges strict.',
+//            en: 'Personal prototype, without a strict requirements document.',
+//        },
+//
+//        description: {
+//            fr: 'Description détaillée du prototype multijoueur : objectifs, systèmes de jeu, problèmes réseau rencontrés...',
+//            en: 'Detailed description of the multiplayer prototype: goals, gameplay systems, network issues...',
+//        },
+//
+//        demoVideo: null, // pas encore de vidéo
+//
+//        postMortem: {
+//            fr: 'Ce projet m’a aidé à mieux comprendre le réseau et les contraintes du multijoueur.',
+//            en: 'This project helped me better understand networking and multiplayer constraints.',
+//        },
+//
+//        links: {
+//            github: '',
+//            itch: 'https://itch.io/', // à remplacer par ta page
+//            youtube: '',
+//        },
+//    },
 ];
