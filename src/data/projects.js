@@ -69,7 +69,7 @@ export const projects = [
 
         demoVideo: {
             type: 'youtube',
-            url: 'https://youtu.be/N9N8BV0NJQI',
+            url: 'https://youtu.be/f8xOQR2f4xI',
         },
 
         postMortem: {
