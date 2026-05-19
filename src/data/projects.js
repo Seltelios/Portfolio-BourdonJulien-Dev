@@ -11,6 +11,95 @@
 
 export const projects = [
 
+    //----------------------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------------------
+    // Projet Larron
+    //----------------------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------------------
+
+    {
+        id: 'unity-larron',
+        category: 'school',
+
+        title: {
+            fr: 'Projet Larron - Gaming Award 2026',
+            en: 'Larron Project - Gaming Award 2026',
+        },
+
+        shortDescription: {
+            fr: 'Jeu mobile coopératif réalisé pour les GamingCampus Awards 2026.',
+            en: 'Mobile game project created for the GamingCampus Awards 2026.',
+        },
+
+        thumbnail: 'images/projects/Project_Larron/Ecran_Chargement_Larron.png',
+
+        skills: ['Unity', 'C#'],
+
+        constraints: {
+            fr:
+                'Objectifs de ce projet :' +
+                '\n - Réaliser un jeu mobile en équipe multidisciplinaire.' +
+                '\n - Collaborer entre les pôles Arts, Tech, Business et TV.' +
+                '\n - Présenter une démo jouable devant un jury lors des GamingCampus Awards 2026.' +
+                '\n - Développer un prototype complet en seulement 2 mois.',
+            en:
+                'Goals for this project:' +
+                '\n - Create a mobile game within a multidisciplinary team.' +
+                '\n - Collaborate between Arts, Tech, Business and TV departments.' +
+                '\n - Present a playable demo to a jury during the GamingCampus Awards 2026.' +
+                '\n - Develop a complete prototype within only 2 months.',
+        },
+
+        description: {
+            fr:
+                'Déroulement du projet :' +
+                '\n - Projet réalisé en équipe multi-pôles.' +
+                '\n - Durée : 2 mois.' +
+                '\n - Première Place aux GamingCampus Awards 2026.' +
+                '\n\nDans Larron, le joueur incarne un raton-laveur transporté dans un monde médiéval fantastique.' +
+                '\n Explorez une ville pleine de vie, semez le chaos parmi les villageois et retrouvez l’artefact permettant de rentrer chez vous.',
+            en:
+                'Project overview:' +
+                '\n - Project developed with a multidisciplinary team.' +
+                '\n - Duration: 2 months.' +
+                '\n - First Place winner at the GamingCampus Awards 2026.' +
+                '\n\nIn Larron, players control a raccoon suddenly transported into a medieval fantasy world.' +
+                '\n Explore the city, drive villagers crazy, and find the artifact that will allow you to return home.',
+        },
+
+        demoVideo: {
+            type: 'youtube',
+            url: 'https://youtu.be/N9N8BV0NJQI',
+        },
+
+        postMortem: {
+            fr:
+                '- Enfin un projet s’étalant sur plusieurs mois, permettant une vraie phase de production et d’itération.' +
+                '\n - Ce projet a été une excellente opportunité de collaborer avec les différents pôles du GamingCampus Lyon et de découvrir une organisation proche d’un véritable studio.' +
+                '\n - Le développement du jeu a nécessité une forte communication entre les équipes afin de produire une démo cohérente et aboutie.' +
+                '\n - J’ai particulièrement compris l’importance d’écrire du code pensé pour les autres développeurs et pour les futurs systèmes du projet.' +
+                '\n - Sur ce projet, j’étais principalement chargé du système d’interactions avec les objets : objets transportables, jetables, destructibles, ainsi que leurs effets audio et VFX associés.' +
+                '\n\nSuper expérience humaine et technique, portée par une excellente équipe et un lead technique très inspirant : Cedric Bernard.',
+            en:
+                '- Finally, a project lasting several months, allowing for real production and iteration phases.' +
+                '\n - This project was a great opportunity to collaborate with all GamingCampus Lyon departments and experience a workflow close to a real game studio.' +
+                '\n - Developing the game required strong communication between teams to deliver a coherent and polished demo.' +
+                '\n - I particularly learned the importance of writing code designed for other developers and future gameplay systems.' +
+                '\n - My main responsibility on the project was the object interaction system: portable, throwable and breakable objects, along with audio and VFX feedback.' +
+                '\n\nA fantastic human and technical experience, supported by an amazing team and an inspiring tech lead: Cedric Bernard.',
+        },
+
+        links: {
+            github: '',
+            itch: '',
+            youtube: '',
+        },
+    },
+
+
+
+
+
 
     //----------------------------------------------------------------------------------------------------
     //----------------------------------------------------------------------------------------------------
@@ -23,8 +112,8 @@ export const projects = [
         category: 'school',
 
         title: {
-            fr: 'Projet Unity - Système de Sauvegarde',
-            en: 'Unity Project - Save System',
+            fr: 'Projet Unity - Système de Sauvegarde : SaveRPG',
+            en: 'Unity Project - Save System : SaveRPG',
         },
 
         shortDescription: {
@@ -32,7 +121,7 @@ export const projects = [
             en: 'Prototype of a local and online save system using Firebase.',
         },
 
-        thumbnail: '',
+        thumbnail: 'images/projects/Project_SaveRPG/Titre_SaveRPG.png',
 
         skills: ['Unity', 'C#', 'Firebase', 'JSON'],
 
@@ -100,8 +189,8 @@ export const projects = [
         category: 'school',
 
         title: {
-            fr: 'Projet Unity - UI / UX',
-            en: 'Unity Project - UI / UX',
+            fr: 'Projet Unity - UI / UX : SpatiaFactory',
+            en: 'Unity Project - UI / UX : SpatiaFactory',
         },
 
         shortDescription: {
@@ -109,7 +198,7 @@ export const projects = [
             en: 'Prototype of a game entirely based on UI with visual feedback systems.',
         },
 
-        thumbnail: '',
+        thumbnail: 'images/projects/Project_SpatiaFactory/Titre_SpatiaFactory.png',
 
         skills: ['Unity', 'C#', 'UI/UX'],
 
@@ -188,7 +277,7 @@ export const projects = [
             en: '3C gameplay prototype exploring several mechanics for a stealth game.',
         },
 
-        thumbnail: 'images/projects/Project_3C/Capture01_Lvl1_WishBond.png',
+        thumbnail: 'images/projects/Project_3C/Titre_WishBond.png',
 
         skills: ['Unity', 'C#', 'NewInputController', 'NavMesh'],
 
@@ -257,12 +346,12 @@ export const projects = [
     //----------------------------------------------------------------------------------------------------
 
     {
-        id: 'unreal-angrybirds',
+        id: 'unreal-funniestbirds',
         category: 'school',
 
         title: {
-            fr: 'Projet Unreal Engine - Angry Birds',
-            en: 'Unreal Engine Project - Angry Birds',
+            fr: 'Projet Unreal Engine - Funniest Birds',
+            en: 'Unreal Engine Project - Funniest Birds',
         },
 
         shortDescription: {
@@ -270,7 +359,7 @@ export const projects = [
             en: 'Advanced physics prototype inspired by Angry Birds using Unreal Engine.',
         },
 
-        thumbnail: '',
+        thumbnail: 'images/projects/Project_FunniestBirds/Titre_FunniestBirds.png',
 
         skills: ['Unreal Engine', 'C++', 'Blueprint', 'Physics', 'Fracture'],
 
@@ -330,6 +419,90 @@ export const projects = [
 
         links: {
             github: '', // souvent vide pour Unreal
+            itch: '',
+            youtube: '',
+        },
+    },
+
+
+    //----------------------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------------------
+    // Projet [ENARIA]
+    //----------------------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------------------
+
+    {
+        id: 'unity-enaria',
+        category: 'school',
+
+        title: {
+            fr: 'Projet [ENARIA]',
+            en: '[ENARIA] Project',
+        },
+
+        shortDescription: {
+            fr: 'Démo de jeu Unity inspirée des mécaniques du MMORPG Dofus.',
+            en: 'Unity game demo inspired by mechanics from the MMORPG Dofus.',
+        },
+
+        thumbnail: 'images/projects/Project_ENARIA/Titre_ENARIA.png',
+
+        skills: ['Unity', 'C#'],
+
+        constraints: {
+            fr:
+                'Objectifs de ce projet :' +
+                '\n - Créer une démo de jeu complète.' +
+                '\n - Travailler en équipe réduite autour d’un projet commun.' +
+                '\n - Expérimenter plusieurs systèmes inspirés du MMORPG Dofus.' +
+                '\n - Réaliser un projet remplaçant le stage de 2ème année.',
+            en:
+                'Goals for this project:' +
+                '\n - Create a complete game demo.' +
+                '\n - Work within a small team around a shared project.' +
+                '\n - Experiment with several systems inspired by the MMORPG Dofus.' +
+                '\n - Develop a project replacing the second-year internship.',
+        },
+
+        description: {
+            fr:
+                'Déroulement du projet :' +
+                '\n - Création d’un GStudio dans le cadre du remplacement du stage de 2ème année.' +
+                '\n - Équipe de moins de 10 étudiants.' +
+                '\n - Durée : 2 mois.' +
+                '\n\n [ENARIA] est un projet ambitieux inspiré des mécaniques du MMORPG Dofus.' +
+                '\n L’objectif était de nous challenger techniquement en concevant plusieurs systèmes de jeu : combat au tour par tour, dialogues avec PNJ, système de quêtes, métiers, inventaire et boutique.',
+            en:
+                'Project overview:' +
+                '\n - Creation of a GStudio project as a replacement for the second-year internship.' +
+                '\n - Team of fewer than 10 students.' +
+                '\n - Duration: 2 months.' +
+                '\n\n [ENARIA] is an ambitious project inspired by mechanics from the MMORPG Dofus.' +
+                '\n The goal was to challenge ourselves technically by designing several gameplay systems: turn-based combat, NPC dialogues, quest system, professions, inventory and shop systems.',
+        },
+
+        demoVideo: {
+            type: 'youtube',
+            url: 'https://youtu.be/wMOJeRAtqD4',
+        },
+
+        postMortem: {
+            fr:
+                '- [ENARIA] était un projet ambitieux pour une équipe de 2ème année, avec de nombreux systèmes à concevoir en parallèle.' +
+                '\n - Ce projet a mis en lumière l’importance d’une bonne communication entre les différents pôles dans la conception d’un jeu vidéo.' +
+                '\n - Il m’a également permis de prendre conscience des responsabilités liées à la direction d’une équipe, notamment lorsqu’il faut à la fois organiser le travail collectif et assurer sa propre partie de programmation.' +
+                '\n - Cette expérience m’a montré que je manquais encore de recul, d’expérience et de méthodologie pour encadrer efficacement une équipe sur un projet aussi large.' +
+                '\n\nMalgré les difficultés, [ENARIA] a été une très bonne expérience. Ce projet m’a permis d’identifier mes lacunes, de mieux comprendre ce qu’il me manquait pour mener un projet dans de bonnes conditions, et de progresser autant techniquement qu’humainement.',
+            en:
+                '- [ENARIA] was an ambitious project for a second-year team, with many systems to design in parallel.' +
+                '\n - This project highlighted the importance of strong communication between departments when creating a video game.' +
+                '\n - It also helped me understand the responsibilities involved in leading a team, especially when trying to both organize the group’s work and handle my own programming tasks.' +
+                '\n - This experience showed me that I still lacked the perspective, experience and methodology needed to efficiently lead a team on such a large project.' +
+                '\n\nDespite the difficulties, [ENARIA] was a very valuable experience. It helped me identify my weaknesses, understand what I was missing to manage a project properly, and improve both technically and personally.',
+        },
+
+        links: {
+            github: '',
             itch: '',
             youtube: '',
         },

@@ -60,15 +60,34 @@ function ProjectModal({ project, onClose }) {
             role="dialog"
         >
             <div className="relative max-w-4xl w-full max-h-[90vh] bg-slate-900 border border-slate-600 rounded-lg shadow-2xl overflow-y-auto">
-                <button
-                    type="button"
-                    onClick={onClose}
-                    className="absolute top-2 right-2 z-10 h-8 w-8 rounded-full bg-slate-800 border border-slate-600
-                     flex items-center justify-center text-slate-200 hover:bg-slate-700 hover:border-sky-400 transition-colors"
-                    aria-label={labels.close}
-                >
-                    ✕
-                </button>
+                <div className="sticky top-0 z-20 flex items-center justify-between px-4 py-2 bg-slate-900/80 backdrop-blur-sm border-b border-slate-700">
+                    <span className="text-sm text-slate-300 font-medium">
+                        {title}
+                    </span>
+
+                    <button
+                        type="button"
+                        onClick={onClose}
+                        className="
+                            h-8
+                            w-8
+                            rounded-full
+                            bg-slate-800
+                            border
+                            border-slate-600
+                            flex
+                            items-center
+                            justify-center
+                            text-slate-200
+                            hover:bg-slate-700
+                            hover:border-sky-400
+                            transition-colors
+                        "
+                        aria-label={labels.close}
+                    >
+                        ✕
+                    </button>
+                </div>
 
                 <div className="px-5 py-4 border-b border-slate-700">
                     <h2 className="text-xl font-semibold text-center">
